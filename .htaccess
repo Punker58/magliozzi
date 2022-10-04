@@ -1,0 +1,26 @@
+## GODADDY
+
+Options +MultiViews
+
+## REMOVE EXTENSIONS
+
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+## FROM EXTENSIONS TO NON EXTENSIONS
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1[R=301,NE,L]
+
+## NON WWW TO WWW
+
+## RewriteCond %{HTTP_HOST} ^magliozzi-group\.com$ [NC]
+## RewriteRule ^(.*)$ http://www.magliozzi-group.com/$1 [R=301,L]
+
+## SSL
+
+## RewriteCond %{HTTPS} !=On
+## RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
