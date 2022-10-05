@@ -89,6 +89,12 @@ a:hover, a:visited, a:link, a:active, i:hover
     padding: 20px 0 70px 0 !important;
 }
 
+#three{
+    background-color: white  !important;
+    margin-bottom:-20px !important;
+    padding: 20px 0 70px 0 !important;
+}
+
 #mission{
     background-image: url(../_images/background.jpg);
     padding-top: 20px;
@@ -286,20 +292,23 @@ hr {
 .mission h2{
     text-align: center;
     font-size: 6vh;
-    color:#054664 !important;
     font-weight: bold;
+    letter-spacing: 0.2vh;
+    padding: 2vh;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #054664!important;
-    padding-bottom:50px;
-    padding-top:25px;
+    color: var(--3);
+    text-shadow:
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                1px 1px 0 var(--2);
 }
 
 .mission p {
     font-size: 24px;
     line-height: 32px;
-    text-align: left;
-    color: #054664 !important;
+    text-align: center;
+    color: var(--2) !important;
 }
 
 /* Lavori */
@@ -362,30 +371,18 @@ hr {
 
 #s-servizi{
     text-align: center;
-    color:#054664 !important;
     font-size: 6vh;
     font-weight: bold;
-    text-decoration-line:underline;
-    text-transform: uppercase;
+    letter-spacing: 0.2vh;
     padding-bottom:50px;
     padding-top:25px;
-}
-
-.servizio{
-    background-color: #B5D6F9 !important;
-    font-weight: bold;
-    font-size: 30px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration-line: underline;
-    text-decoration-color:  #B5D6F9 !important;
-}
-
-.servizio2{
-    background-color: #B5D6F9 !important;
-    font-size: 16px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    color: var(--3);
+    text-shadow: 
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                 1px 1px 0 var(--2);
 }
 
 #col-card{
@@ -434,7 +431,6 @@ hr {
     color:#054664;
     border-color: #054664;
 }
-
 /* Mappa */
 
 .map-responsive {
@@ -461,7 +457,8 @@ hr {
 
 .certificazioni {
     background-color: #054664;
-    position:relative;
+    position:
+    relative;
     background-size: cover;
     background-position: center;
     padding-top:50px;
@@ -469,12 +466,22 @@ hr {
 
 
 .certificazioni h2 {
-    color:#B5D6F9 !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration-color: #B5D6F9 !important;
     padding-bottom: 50px;
-    font-size: 5vh;
+    font-size: 4.5vh;
+    font-weight: bold;
+    letter-spacing: 0.2vh;
+    text-transform: uppercase;
+    color: var(--3);
+    text-shadow: 
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+}
+
+.certificazioni h1 {
+    font-size: 3vh;
+    color: white;
 }
 
 .certificazioni img {
@@ -485,6 +492,15 @@ hr {
 
 .contattix {
     color:#054664;
+}
+
+.contattix h2 {
+    color: var(--3);
+    text-shadow: 
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                1px 1px 0 var(--2);
 }
 
 /* Footer */
@@ -638,6 +654,12 @@ hr {
     margin-top:10px;
 }
 
+.form-group>h1 {
+    color: var(--3) !important;
+    text-shadow: -1px -1px 0 white,
+                1px -1px 0 white;
+}
+
 .form-group p {
     color: white !important;
 }
@@ -710,60 +732,24 @@ hr {
     width:0;
 }
 
-.lavori a .item {
-    width:40vh;
-    height:40vh;
-    line-height: 110px;
-    text-align:center;
-    background-color: black;
-    margin-right:5vh;
-    margin-bottom: 5vh;
-    background-image: url("../_images/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius:15px;
-    border: 2px var(--2) solid;
-    transition: transform .2s;
-    text-decoration: none !important;
-}
-
-.lavori a .item p {
-    font-size:3.5vh;
-    padding-top: 15vh;
-    text-transform: uppercase;
-    text-decoration-line: none !important;
-    text-align: center;
-    line-height: 1;
-    color:#054664;
-}
-
-.lavori .item:hover {
-    transform: scale(1.1);
-}
-
 .lavori-s{
     background-color: #054664;
-    position:relative;
-    /* min-height:  100vh; */
-    background-size: cover;
-    background-position: center;
     padding-top:50px;
 }
 
 .lavori-s h2 {
     text-align: center;
     font-size: 50px;
-    color:#B5D6F9 !important;
     font-weight: bold;
+    letter-spacing: 0.2vh;
     text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #B5D6F9 !important;
     padding-bottom: 50px;
-}
-
-.item a i {
-    color:white;
-    font-size:30px;
+    color: var(--3);
+    text-shadow: 
+                -1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
 }
 
 /* Galleria */
@@ -891,8 +877,7 @@ thead, tr, th {
 
 .g8 h1{
     font-size: 4vh;
-    color:
-    var(--3);
+    color:var(--3);
     text-shadow: -1px -1px 0 #054664 ,
                 1px -1px 0 #054664 ,
                 -1px 1px 0 #054664 ,
@@ -904,8 +889,17 @@ thead, tr, th {
     font-size:2vh;
 }
 
-.x1 tr, .x1 th{
-    color: #054664;
+.x1 th{
+    color: var(--3);
+    text-shadow: 
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                1px 1px 0 var(--2);
+}
+
+.x1 td {
+    color: var(--2);
 }
 
 .x2 tr, .x2 th {

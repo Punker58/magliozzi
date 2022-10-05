@@ -23,32 +23,27 @@
       </section>
     <!-- Main End -->
 
-    <section id="main" class="main-s">
+    <section id="main">
 
         <div class="container">
 
-            <div class="row g8">
+            <div class="row g9">
 
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-                  <div class="background-contatti  shadow-lg p-3 mb-5 mt-5">
-
-                    <div class="form-group">
-
-                      <h1 class="pt-3">Contattaci</h1>
-                      <hr>
-
-                    </div>  
+                  <div class="background-contatti shadow-lg p-3 mt-5 mb-5">
 
                     <div class="row">
 
                       <div class="col-md-6">
 
-                        <div class="form-group">
+                        <div class="form-group mt-5">
+                          <h1>SEDE</h1>
                           <address>Via Arturo Toscanini 3, Volla (NA)</address>
                           <p>Email: info@magliozzi-group.com</p>
                           <p>Telefono: 081 19812922</p>
-                        </div> 
+                        </div>
+                        <hr> 
 
                       </div>
 

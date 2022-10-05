@@ -1,3 +1,10 @@
+*{
+  --3: #FBBD04;
+  --2: #054664;
+  --1: #B5D6F9;
+}
+
+
 .card {
   position: relative;
   width: 300px;
@@ -30,13 +37,24 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  background-color: #054664;
+  background-color: white;
   border-radius:15px;
+  border: 2px solid var(--2);
 }
 
 .card .face.face1 h2 {
   margin: 0;
   padding: 0;
+  color: var(--3);
+  text-shadow:
+               -1px -1px 0 #054664,
+                1px -1px 0 #054664,
+               -1px 1px 0 #054664,
+                1px 1px 0 #054664;
+}
+
+.card .face.face1 p {
+  color: var(--2) !important;
 }
 
 

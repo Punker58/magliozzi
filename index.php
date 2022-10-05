@@ -122,8 +122,8 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Climatizzazione</h2>
-                      <p class="servizio2">Realizzazione e gestione di impianti con contratti
+                    <h2>Climatizzazione</h2>
+                      <p>Realizzazione e gestione di impianti con contratti
                         di manutenzione e visite periodiche pianificate in
                         base alla tipologia di impianti...
                       </p>
@@ -140,8 +140,8 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Elettrico</h2>
-                      <p class="servizio2">Realizzazione, manutenzione e gestione con controlli mirati dei
+                    <h2 >Elettrico</h2>
+                      <p >Realizzazione, manutenzione e gestione con controlli mirati dei
                         componenti di sicurezza, interruttori, quadri elettrici in
                         generale... 
                       </p>
@@ -158,8 +158,9 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Idraulico</h2>
-                      <p class="servizio2">Realizzazione manutenzione e gestione di impianti
+                    <h2>Idraulico</h2>
+                      <p>
+                        Realizzazione manutenzione e gestione di impianti
                         industriali sia termici che idraulici con controlli...
                       </p>
                   </div>
@@ -175,8 +176,8 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Fotovoltaico</h2>
-                      <p class="servizio2">Proggettiamo e realizziamo impianti solari
+                    <h2>Fotovoltaico</h2>
+                      <p>Proggettiamo e realizziamo impianti solari
                         residenziali, ma anche di potenza indistriale...
                       </p>
                   </div>
@@ -192,8 +193,8 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Gestione</h2>
-                      <p class="servizio2">Ci proponiamo come punto di riferimento per la realizzazione
+                    <h2>Gestione</h2>
+                      <p>Ci proponiamo come punto di riferimento per la realizzazione
                         di un progetto con la collaborazione dei nostri profesionisti...
                       </p>
                   </div>
@@ -209,8 +210,8 @@
                 <div class="face face1">
                   <div class="content">
                     <span class="stars"></span>
-                    <h2 class="servizio">Ristrutturazione</h2>
-                      <p class="servizio2">Realizzazione di Ristruttarazioni con Architetto,
+                    <h2>Ristrutturazione</h2>
+                      <p>Realizzazione di Ristruttarazioni con Architetto,
                         studiate insieme al cliente nei minimi particolari...
                       </p>
                   </div>
@@ -229,44 +230,44 @@
     <section id="main" class="certificazioni">
 
       <div class="container">
-        <h2 class="text-center text-decoration-underline" data-aos="fade-up" data-aos-duration="3000">LE NOSTRE CERTIFICAZIONI</h2>
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="3000">LE NOSTRE CERTIFICAZIONI</h2>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-duration="3000">
 
         <div class="row">
 
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5 text-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 mb-5 text-center">
 
-            <h2 style="font-size:2.7vh; text-decoration: none;">F-GAS</h2>
+            <h1>F-GAS</h1>
             <a href="assets/_images/certificazioni/Certificazione-IMQ.pdf"><img class="center"src="assets/_images/_icone/imq.png"  alt=""></a>
 
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 mb-5 text-center">
 
-            <h2 style="font-size:2.7vh; text-decoration: none;">UNI EN ISO 9001:2015</h2>
+            <h1>UNI EN ISO 9001:2015</h1>
             <a href="assets/_images/certificazioni/Certificazione-PCQ.pdf"><img src="assets/_images/_icone/pcq.png" alt=""></a>
 
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5 text-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 mb-5 text-center">
 
-            <h2 style="font-size:2.7vh; text-decoration: none;">SOA CAT.1 0S28 I</h2>
+            <h1>SOA CAT.1 0S28 I</h1>
             <a href="assets/_images/certificazioni/Certificazione-SOA.pdf"><img src="assets/_images/_icone/soa.png" alt=""></a>
 
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 col-xxl-3 mb-5 text-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-5 text-center">
 
-            <h2 style="font-size:2.5vh; text-decoration: none;">DM 37/08</h2>
+            <h1>DM 37/08</h1>
             <img src="assets/_images/_icone/dm3708.png" alt="">
 
           </div>
 
 
 
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 text-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-12 mb-5 text-center">
 
             <a href="assets/_images/certificazioni/Certificazione-hilti.pdf"><img src="assets/_images/_icone/hilti.png" alt=""></a>
 
@@ -280,7 +281,7 @@
     <!-- Certificazioni End -->    
 
     <!-- Contatti -->
-    <section id="two" class="servizi">
+    <section id="three" class="servizi">
     
         <div class="container margin-bottom" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         <h2 id="s-servizi">CONTATTI</h2>
@@ -291,7 +292,7 @@
           <div class="row align-items-start" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center pe-5-xxl float-start">
-              <h2 class="fw-bold">SEDE</h2>
+              <h2>SEDE</h2>
               <p class="mb-5">Via Arturo Toscanini, 3</br>(angolo Via Fraustino)<br/>80040 Volla (NA)</p>
 
               <div class="map-responsive rounded mb-5">
@@ -302,11 +303,11 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 ps-5-xxl">
 
-              <h2 class="text-center fw-bold">INFO</h2>
+              <h2 class="text-center">INFO</h2>
               <p class="text-center">Email: info@magliozzi-group.com</p>
               <p class="text-center mb-5">Telefono: 081 19812922</p>
 
-              <h2 class="text-center fw-bold">ORARI</h2>
+              <h2 class="text-center">ORARI</h2>
 
               <table class="table">
                 <tbody class="x1">
