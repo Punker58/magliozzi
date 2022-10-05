@@ -732,6 +732,36 @@ hr {
     width:0;
 }
 
+.lavori a .item {
+    width:40vh;
+    height:40vh;
+    line-height: 110px;
+    text-align:center;
+    background-color: black;
+    margin-right:5vh;
+    margin-bottom: 5vh;
+    background-image: url("../_images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:15px;
+    border: 2px var(--3) solid;
+    transition: transform .2s;
+    text-decoration: none !important;
+}
+
+.lavori a .item p {
+    font-size:3.5vh;
+    padding-top: 15vh;
+    text-transform: uppercase;
+    text-align:center;
+    line-height: 1;
+    color:#054664;
+}
+
+.lavori .item:hover {
+    transform: scale(1.1);
+}
+
 .lavori-s{
     background-color: #054664;
     padding-top:50px;
@@ -751,6 +781,18 @@ hr {
                 -1px 1px 0 white,
                 1px 1px 0 white;
 }
+
+.swiper-slide>img {
+    border:2px solid var(--3);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 
 /* Galleria */
 
