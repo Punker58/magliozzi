@@ -3,9 +3,9 @@
   <head>
 
     <?php 
-          include 'config/link.php';
-          metaTags();
-          linkCss();
+      include 'config/link.php';
+      metaTags();
+      linkCss();
     ?>
 
     <title>Sito Web Ufficiale Magliozzi Group SRL</title>
@@ -335,20 +335,20 @@
 
     <script>
       var swiper2 = new Swiper(".mySwiper", {
-        loop: true,
-        grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
-          prev: {
-            translate: ["-120%", 0, -500],
-          },
-          next: {
-            translate: ["120%", 0, -500],
-          },
+                loop: true,
+                grabCursor: true,
+                effect: "creative",
+                creativeEffect: {
+                  prev: {
+                    translate: ["-120%", 0, -500],
+                  },
+                  next: {
+                    translate: ["120%", 0, -500],
+                  },
+                },
+                autoplay: {
+          delay: 3000,
         },
-        autoplay: {
-   delay: 3000,
- },
       });
     </script>
     

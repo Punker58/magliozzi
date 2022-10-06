@@ -1,30 +1,12 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Magliozzi, Magliozzi Group, Volla, climatizzazione, idraulico, elettrico, fotovoltaico, termico, impianti, impianti civili, impianti industriali, Ristrutturazione">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/card.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    
-    <!-- Line Awesome --->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-    <!-- Animation CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets\_images\favicon.ico">
-
-    <!-- Zoom -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zoom.js/0.0.1/zoom.min.js" integrity="sha512-OhJxb3F/IiF96I1C2hoqRw8iu54GLjgaw/Bl0SRBuuK2qtPqgpKh5m15dSJxub1GwUgxVGzsBotW742Iva4Y6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <?php 
+      include '../config/link.php';
+      metaTags();
+      linkCss2();
+    ?>
 
     <title>Politica della privacy | Sito Web Ufficiale Magliozzi Group SRL</title>
   </head>
@@ -159,17 +141,8 @@
     <?php $footer= 'doppio'; include '../config/footer.php';?>
     <!-- Footer End -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS LINK-->
+    <?php linkJs();?>
 
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    
   </body>
 </html>

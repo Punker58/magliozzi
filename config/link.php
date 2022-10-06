@@ -71,6 +71,36 @@
             ';
     }
 
+    // LIVELLO 3: CSS + bootstrap + line awesome + fancybox + favicon + swiper
+    function linkCss3() {
+        echo
+            '
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+            
+            <!-- Main CSS -->
+            <link rel="stylesheet" href="../../assets/css/main.css">
+            <link rel="stylesheet" href="../../assets/css/card.css">
+            <link rel="stylesheet" href="../../assets/css/animate.css">
+        
+            <!-- Line Awesome --->
+            <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        
+            <!-- Animation CSS-->
+            <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        
+            <!-- fancybox-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+            <!-- Swiper JS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        
+            <!-- Favicon -->
+            <link rel="icon" href="../../assets/_images/favicon.ico">
+
+            ';
+    }    
+
     // LIVELLO 5: CSS + bootstrap + line awesome + fancybox + favicon + swiper
     function linkCss5() {
         echo
