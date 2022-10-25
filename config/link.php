@@ -156,4 +156,25 @@
             ';
     }
 
+    function fastContacts() {
+
+        echo
+            '
+                <section id="fast-contacts-s">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-5 fast-social"><a href="https://concessionari.unicalag.it/napoli/magliozzi-group-srl"><img src="assets/_images/_icone/unical.png" width="200" alt=""></a></div>
+                        <div class="col-5 fast-social"> 
+                            <a href="https://www.linkedin.com/in/magliozzi-group-srl-1b223a87/"><i class="lab la-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/magliozzigroupsrl/"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.facebook.com/MagliozziGroupClimatizzazione"><i class="lab la-facebook"></i></a>
+                            <a href="https://wa.me/+393290452179?text=Salve%20sono%20interessato%20a%20un%20prenventivo..." ><i class="lab la-whatsapp"></i></a>
+                        </div>     
+                    </div>
+                    </div>
+                </section>  
+            ';
+
+    }
+
 ?>

@@ -68,7 +68,7 @@ a:hover, a:visited, a:link, a:active, i:hover
 }
 
 #fast-contacts-s {
-    background-color: #054664 !important;
+    background-color: var(--3) !important;
 }
 
 #header{
@@ -700,24 +700,108 @@ hr {
 
 /* Galleria */
 
-.c-galleria {
-    width: 37vh;
-    height: 20vh;
-    background: #B5D6F9;
-    background-image: url("../_images/lavori/aereoporto_capodichino/back.jpg");
-    background-size: cover;
-    margin: 0 auto;
-    margin-top: 88px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+.gal {
+    font-weight: bolder;
+    color: var(--2);
 }
 
-.c-galleria p {
-    margin-top:60px;
-    font-size:3vh;
-    font-weight: bold;
+.gal h1 {
+    color:var(--3);
+    text-shadow: 
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                 1px 1px 0 var(--2);
+}
+
+.gal h2 {
+    margin-top: 5vh;
+    color:var(--3);
+    text-shadow: 
+                -1px -1px 0 var(--2),
+                1px -1px 0 var(--2),
+                -1px 1px 0 var(--2),
+                 1px 1px 0 var(--2);
+    text-transform: capitalize;
+}
+
+.gal:nth-child(odd) {
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+}
+
+.gal1 {
+    background-color: var(--2);
+    padding: 8vh;
+    font-size: 2.5vh;
+    text-transform: lowercase;
+    border-radius: 2vh;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+                         1px 6px 11px 3px rgba(0,0,0,0.03);
+    box-shadow: 0px 10px 13px -7px #000000,
+                 1px 6px 11px 3px rgba(0,0,0,0.03);
+}
+
+.gal1 h1 {
+    color: var(--3);
     text-transform: uppercase;
-    text-align:center;
+    font-weight: bolder;
+}
+
+.gal1 p {
+    color: white !important;
+    text-transform: lowercase;
+}
+
+.gal1 img {
+    width: 200px;
+    margin:4vh;
+    transition: transform .2s;
+    border: 2px solid var(--3); 
+    border-radius: 2vh;
+}
+
+.gal1 img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+                         1px 6px 11px 3px rgba(0,0,0,0.03); 
+    box-shadow: 0px 10px 13px -7px #000000,
+                1px 6px 11px 3px rgba(0,0,0,0.03);
+}
+
+.slider-wrap img {
+    border: 5px solid var(--2);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+                         1px 6px 11px 3px rgba(0,0,0,0.03); 
+    box-shadow: 0px 10px 13px -7px #000000,
+                1px 6px 11px 3px rgba(0,0,0,0.03);
+}
+
+.slider-container .slider-wrap .slider-btn::after  {
+    color: var(--3) !important;
+    background-color: var(--2) !important;
+    content: '<>' !important;
+}
+
+.slider-btn {
+    background: var(--2) !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .slider-container {
+        height: 20rem !important;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .slider-container {
+        height: 20rem !important;
+    }
+
 }
 
 /* Alcuni lavori */

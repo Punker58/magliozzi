@@ -22,11 +22,12 @@
             <a href="https://www.facebook.com/MagliozziGroupClimatizzazione"><i class="lab la-facebook"></i></a>
             <a href="https://wa.me/+393290452179?text=Salve%20sono%20interessato%20a%20un%20prenventivo..." ><i class="lab la-whatsapp"></i></a>
           </div>
-          <div class="col lingua">
+          <!-- <div class="col lingua">
             <a href="#"><img src="https://img.icons8.com/office/40/000000/italy.png"/></a>
             <a href="en/index"><img src="https://img.icons8.com/office/40/000000/england.png"/></a>
           </div>
-        </div>
+        -->        
+      </div>
     </div>
   </section>  
 
