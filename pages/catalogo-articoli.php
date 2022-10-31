@@ -12,9 +12,11 @@
   </head>
   <body>
 
-    <!-- Header -->
-    <?php $page='doppio'; include '../config/navbar.php';?>
-    <!-- Header End -->
+    <!-- fast contacts + navbar -->
+    <?php $page='doppio';
+          fastContacts();
+          include '../config/navbar.php';
+    ?>
 
     <!-- Main -->
       <section id="main" class="main2">
@@ -48,7 +50,7 @@
 
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
 
-                  <div class="articolo shadow">
+                  <div class="articolo shadow" onclick="flowy()">
                     <p>FLOWY</p>
                   </div>      
             </div>
@@ -69,7 +71,11 @@
     <script>
 
       function konm() {
-        location.href='articoli/caldaie/konm';
+        location.href='articolo?nome=konm';
+      }
+
+      function flowy() {
+        location.href='articolo?nome=flowy';
       }
 
     </script>

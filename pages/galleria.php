@@ -1,3 +1,64 @@
+<?php
+
+  $listaLavoro = array(
+
+                      [
+                        'link' => 'lavoro?nome=capodichino',
+                        'nome' => 'AEROPORTO<br/>CAPODICHINO'
+                      ],
+
+                      [
+                        'link' => 'lavoro?nome=linate',
+                        'nome' => 'AEROPORTO<br/>LINATE'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=capannone-volla',
+                        'nome' => 'CAPANNONE<br/>VOLLA'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=che-banca-modena',
+                        'nome' => 'CHE BANCA<br/>MODENA'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=ceramiche-ferrara',
+                        'nome' => 'CERAMICHE<br/>FERRARA'
+                      ],
+
+
+                      [
+                        'link' => 'lavoro?nome=farmacia-morra',
+                        'nome' => 'FARMACIA<br/>MORRA'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=farmacia-stilo-igea',
+                        'nome' => 'FARMACIA<br/>STILO IGEA'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=sessa-aurunca',
+                        'nome' => 'OSPEDALE<br/>SESSA AURUNCA'
+                      ],
+
+                      
+                      [
+                        'link' => 'lavoro?nome=villa-nazareno',
+                        'nome' => 'VILLA<br/>NAZARENO'
+                      ]
+
+                    );
+
+
+?>
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -11,9 +72,12 @@
     <title>Galleria | Magliozzi Group SRL</title>
   </head>
   <body>
-    <!-- Header -->
-    <?php $page='doppio'; include '../config/navbar.php';?>
-    <!-- Header End -->
+
+    <!-- fast contacts + navbar -->
+    <?php $page='doppio';
+          fastContacts();
+          include '../config/navbar.php';
+    ?>
 
     <!-- Main -->
       <section id="main" class="main2">
@@ -33,70 +97,24 @@
 
             <div class="row lavori" data-aos="fade-up" data-aos-duration="3000">
 
-                <div class="col d-flex justify-content-center">
-                  <a href="lavori/aeroporto-capodichino">
-                    <div class="item">
-                      <p>Aeroporto</br>Capodichino</p>
-                    </div>
-                  </a>
-                </div>
-          
 
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/aeroporto-linate">
-                <div class="item">
-                  <p>Aeroporto</br>Linate</p>
-                </div>
-              </a>
-            </div>
+            <?php
+            
+              foreach($listaLavoro as $i){
+                
+                    echo '
+                        <div class="col d-flex justify-content-center">
+                        <a href="'.$i['link'].'">
+                          <div class="item">
+                            <p>'.$i['nome'].'</p>
+                          </div>
+                        </a>
+                        </div>
+                    ';
 
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/capannone-volla">
-                <div class="item">
-                  <p>Capannone</br>Volla</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <a href="che-banca-modena">
-                <div class="item">
-                  <p>Che Banca</br>Modena</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/farmacia-morra">
-                <div class="item">
-                  <p>Farmacia</br>Morra</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/ferrara">
-                <div class="item">
-                  <p>Sant'agostino</br>Ferrara</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/sessa-aurunca">
-                <div class="item">
-                  <p>Sessa</br>Aurunca</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-              <a href="lavori/villa-nazareno">
-                <div class="item">
-                  <p>Villa</br>Nazareno</p>
-                </div>
-              </a>
-            </div>
+              }
+            
+            ?>
 
           </div>
 

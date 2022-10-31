@@ -11,9 +11,12 @@
     <title>Contatti | Magliozzi Group SRL</title>
   </head>
   <body>
-    <!-- Header -->
-    <?php $page='doppio'; include '../config/navbar.php';?>
-    <!-- Header End -->
+    
+    <!-- fast contacts + navbar -->
+    <?php $page='doppio';
+          fastContacts();
+          include '../config/navbar.php';
+    ?>
 
     <!-- Main -->
       <section id="main" class="main2">
