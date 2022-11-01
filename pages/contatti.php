@@ -14,7 +14,7 @@
     
     <!-- fast contacts + navbar -->
     <?php $page='doppio';
-          fastContacts();
+          fastContacts($page);
           include '../config/navbar.php';
     ?>
 
@@ -118,7 +118,7 @@
     <!-- Footer End -->
 
     <!-- JS LINK-->
-    <?php linkJs();?>
+    <?php linkJs($page);?>
     
   </body>
 </html>

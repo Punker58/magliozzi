@@ -15,8 +15,8 @@
                           'Capodichino - Napoli',
                           'Ristrutturazione totale',
                           2020,
-                          '../assets/_images/lavori/aeroporto-capodichino/7.jpg',
-                          '../assets/_images/lavori/aeroporto-capodichino/7A.jpg',
+                          '../assets/_images/lavori/aero-capodichino/1.jpg',
+                          '../assets/_images/lavori/aero-capodichino/10.jpg',
       /* lavori svolti1 */'<ul>
                           <li>ristrutturazione</li>
                           <li>edile</li>
@@ -38,15 +38,15 @@
                           'Milano - Linate',
                           'Ristrutturazione impianto di climatizzazione e varie riparazioni.',
                           2018,
-                          '../assets/_images/lavori/aero-linate/.jpg',
-                          '../assets/_images/lavori/aero-linate/.jpg',
+                          '../assets/_images/lavori/aero-linate/6-0.jpg',
+                          '../assets/_images/lavori/aero-linate/6.jpg',
       /* lavori svolti1 */'<ul>
                           <li>tubisteria</li>
                           </ul>',
       /* lavori svolti2 */'<ul>
                           <li>climatizzazione</li>
                           </ul>',
-  /* numero immagini  */ 5,
+  /* numero immagini  */ 9,
   /* cartella img */    'aero-linate'
                       );
 
@@ -68,7 +68,7 @@
                           <li>climatizzazione</li>
                           <li>serramenti</li>
                           </ul>',
-  /* numero immagini  */ 7,
+  /* numero immagini  */ 8,
   /* cartella img */    'capannone-volla'
                       );
 
@@ -112,7 +112,7 @@
                           <li>videosorveglianza</li>
                           <li>anti intrusione</li>
                           </ul>',
-  /* numero immagini  */ 12,
+  /* numero immagini  */ 13,
   /* cartella img */    'farmacia-morra'
                       );
 
@@ -168,9 +168,9 @@
                           'OSPEDALE',
                           'sessa aurunca - caserta',
                           'Realizzazione impianto di condizionamento',
-                          2020,
-                          '../assets/_images/lavori/sessa-aurunca/.jpg',
-                          '../assets/_images/lavori/sessa-aurunca/.jpg',
+                          2019,
+                          '../assets/_images/lavori/sessa-aurunca/11-0.jpg',
+                          '../assets/_images/lavori/sessa-aurunca/11.jpg',
       /* lavori svolti1 */'<ul>
                           <li>condizionamento</li>
                           <li>quadro elettrico</li>
@@ -181,7 +181,7 @@
                               <li>tubazioni</li>
                               <li>coibentazioni e finitura in alluminio</li>
                           </ul>',
-  /* numero immagini  */11,
+  /* numero immagini  */14,
   /* cartella img */    'sessa-aurunca'
                       );
 
@@ -227,7 +227,7 @@
 
     <!-- fast contacts + navbar -->
     <?php $page='doppio';
-          fastContacts();
+          fastContacts($page);
           include '../config/navbar.php';
     ?>
 
@@ -322,7 +322,7 @@
     <!-- Footer End -->
 
     <!-- JS LINK-->
-    <?php linkJs();?>
+    <?php linkJs($page);?>
 
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 

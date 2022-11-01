@@ -90,7 +90,7 @@
 
     <!-- fast contacts + navbar -->
     <?php $page='doppio';
-          fastContacts();
+          fastContacts($page);
           include '../config/navbar.php';
     ?>
 
@@ -182,7 +182,7 @@
     <!-- Footer End -->
 
     <!-- JS LINK-->
-    <?php linkJs();?>
+    <?php linkJs($page);?>
 
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   
