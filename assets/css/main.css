@@ -37,6 +37,26 @@ a:hover, a:visited, a:link, a:active, i:hover
 
 @media only screen and (max-width: 1000px) {
 
+    #fast-contacts-s {
+        display:none;
+        
+    }
+
+    #nav-mobile{
+        background-color: var(--2) !important;
+        border-bottom:2px solid var(--3);
+    }
+
+    .navbar-brand img {
+        margin-top:10vh;
+    }
+
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+
     #fast-contacts-s2 {
         background-color: var(--1) !important;
         display:block;
@@ -49,16 +69,17 @@ a:hover, a:visited, a:link, a:active, i:hover
     }
 
     .navbar-brand img {
-        margin-top:50px;
+        margin-top:20vh;
     }
 
     #nav-mobile{
-        background-color: var(--3) !important;
-        border-bottom:2px solid var(--2);
+        background-color: var(--2) !important;
+        border-bottom:2px solid var(--3);
     }
 
 }
 
+/* DESKTOP*/
 @media only screen and (min-width: 1001px) {
 
     #fast-contacts-s2 {
@@ -248,8 +269,8 @@ hr {
 
 #nav-toggle .navbar-toggler,
  .navbar-toggler-icon{
-    color : var(--2);
-    border-color: var(--2);
+    color:white;
+    border-color: white;
     background-color: var(--2) !important;
 }
 
@@ -588,7 +609,7 @@ hr {
 .main-s{
     position:
     relative;
-    min-height:  100vh;
+    /* min-height:  100vh; */
     background-size: cover;
     background-position: center;
 }
@@ -1064,6 +1085,10 @@ thead, tr, th {
     transition: transform 1.5s;
 }
 
+.articolo ul li {
+    color: var(--2);
+}
+
 .articolo:hover {
     background-color: var(--3);
     transform: scale(1.1);
@@ -1073,9 +1098,9 @@ thead, tr, th {
 .articolo>p {
     font-size: 3vh;
     text-align: center;
-    color:var(--2);
+    color:red;
 }
-  
+
 /* MEDIUM ZOOM STYLE*/
 
 .medium-zoom-image--opened {

@@ -44,15 +44,17 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <img class="img-fluid" src="assets/_images/logo.png" width="100" alt="...">
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
             <div class="offcanvas-body" id="bg-navbar-mobile">
-
               <div class="container">
                 <div class="row">
 
                   <div class="col-12 fast-social"> 
                     <div data-bs-dismiss="offcanvas" class="btn btn-light btn-lg mb-3"><i class="las la-times"></i></div>
+                    <img class="img-fluid" src="assets/_images/_icone/unical.png" width="100" alt="...">
+                    <img class="img-fluid" src="assets/_images/logo.png" width="100" alt="...">
                   </div>
 
                   <div class="col-12">

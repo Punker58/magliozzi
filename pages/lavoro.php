@@ -1,6 +1,6 @@
 <?php
 
-  // LINK FUNZIONI +  CLASSI + OGGETTI
+  // LINK FUNZIONI +  CLASSI 
   include '../config/link.php';
   linkClass();
 
@@ -57,8 +57,8 @@
                           'Capannone - Volla',
                           'Ristrutturazione totale',
                           2020,
-                          '../assets/_images/lavori/capannone-volla/4-0.jpg',
-                          '../assets/_images/lavori/capannone-volla/4.jpg',
+                          '../assets/_images/lavori/capannone-volla/9-0.jpg',
+                          '../assets/_images/lavori/capannone-volla/9.jpg',
       /* lavori svolti1 */'<ul>
                           <li>ristrutturazione</li>
                           <li>edile</li>
@@ -68,28 +68,27 @@
                           <li>climatizzazione</li>
                           <li>serramenti</li>
                           </ul>',
-  /* numero immagini  */ 8,
+  /* numero immagini  */ 9,
   /* cartella img */    'capannone-volla'
                       );
 
-  }elseif($_GET['nome'] == 'che-banca-modena'){
+  }elseif($_GET['nome'] == 'uffici-via-depretis-napoli'){
 
       $lavoro = new lavoro(
-                          'BANCA',
-                          'che banca - modena',
-                          'Ristrutturazione impianto elettrico.',
+                          'IMPIANTO IDRAULICO',
+                          'via depretis - napoli',
+                          'Ristrutturazione impianto idraulico.',
                           2021,
-                          '../assets/_images/lavori/che-banca-modena/4-0.jpg',
-                          '../assets/_images/lavori/che-banca-modena/4.jpg',
+                          null,
+                          '<img src="../assets/_images/lavori/via-depretis-napoli/10.jpg" class="img-fluid">',
       /* lavori svolti1 */'<ul>
                           <li>tubisteria</li>
-                          <li>ristrutturazione bagni</li>
-                          <li>impianto elettrico</li>
+                          <li>impianto idraulico</li>
                           </ul>',
       /* lavori svolti2 */'<ul>
                           </ul>',
-  /* numero immagini  */ 5,
-  /* cartella img */    'che-banca-modena'
+  /* numero immagini  */ 10,
+  /* cartella img */    'via-depretis-napoli'
                       );
 
   }elseif($_GET['nome'] == 'farmacia-morra'){
@@ -145,8 +144,8 @@
                           'Farmacia - Milano',
                           'Ristrutturazione totale',
                           2022,
-                          '../assets/_images/lavori/farmacia-stilo-igea/3-0.jpg',
-                          '../assets/_images/lavori/farmacia-stilo-igea/3.jpg',
+                          '../assets/_images/lavori/farmacia-stilo-igea/4-0.jpg',
+                          '../assets/_images/lavori/farmacia-stilo-igea/4.jpg',
       /* lavori svolti1 */'<ul>
                           <li>ristrutturazione</li>
                           <li>edile</li>
@@ -158,7 +157,7 @@
                               <li>anti intrusione</li>
                               <li>antisorveglianza</li>
                           </ul>',
-  /* numero immagini  */ 6,
+  /* numero immagini  */ 11,
   /* cartella img */    'farmacia-stilo-igea'
                       );
 
@@ -185,15 +184,15 @@
   /* cartella img */    'sessa-aurunca'
                       );
 
-  }elseif($_GET['nome'] == 'villa-nazareno'){
+  }elseif($_GET['nome'] == 'villa'){
 
       $lavoro = new lavoro(
-                          'VILLA NAZARENO',
-                          '??? - ???',
+                          'VILLA',
+                          'emilia romagna',
                           'Realizzazione impianto di condizionamento',
                           2021,
-                          '../assets/_images/lavori/villa-nazareno/.jpg',
-                          '../assets/_images/lavori/villa-nazareno/.jpg',
+                          null,
+                          '<img src="../assets/_images/lavori/villa/4.jpg" class="img-fluid"> ',
       /* lavori svolti1 */'<ul>
                           <li>condizionamento</li>
                           <li>impianto elettrico</li>
@@ -204,7 +203,7 @@
                               <li>montaggio climatizzatori</li>
                           </ul>',
   /* numero immagini  */4,
-  /* cartella img */    'villa-nazareno'
+  /* cartella img */    'villa'
                       );
 
   }
@@ -247,7 +246,7 @@
           <div class="row mt-5">
 
             <!-- Intestazione -->
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 gal mb-5">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 gal mb-5" data-aos="fade-up" data-aos-duration="3000">
 
               <h1><?php echo $lavoro->Intestazione(); ?></h1>
               <span><?php echo $lavoro->Nome(); ?></span>
@@ -261,14 +260,26 @@
             </div>
 
             <!-- Slider before & after IMG -->   
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 mb-5">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 mb-5" data-aos="fade-up" data-aos-duration="3000">
               
-              <div id="mySlider"></div>
+              <?php
+
+                if($lavoro->sliderBefore === null){
+
+                  echo $lavoro->sliderAfter;
+
+                }else{
+
+                  echo '<div id="mySlider"></div>';
+
+                }
+
+              ?>
 
             </div>
 
             <!-- Lavori svolti -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gal mt-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gal mt-5" data-aos="fade-up" data-aos-duration="3000">
 
               <h1 class="mb-5 text-end">LAVORI SVOLTI</h1>
 
@@ -291,13 +302,15 @@
             </div>
 
             <!-- Galleria -->
-            <div class="col-12 mt-5 gal">
+            <div class="col-12 mt-5 gal" data-aos="fade-up" data-aos-duration="3000">
 
               <h1 class="mt-5 mb-5">GALLERIA</h1>
 
+              <div class="container-fluid">
+
                 <div class="row">
 
-                  <div class="col-12 gal1 mb-5">
+                  <div class="col-12 gal1 text-center mb-5">
 
                     <?php 
 
@@ -305,8 +318,9 @@
                     
                     ?>
 
-                </div>
+                  </div>
 
+                </div>
               </div>
 
             </div>

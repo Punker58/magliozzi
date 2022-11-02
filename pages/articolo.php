@@ -1,6 +1,6 @@
 <?php
 
-  // LINK FUNZIONI +  CLASSI + OGGETTI
+  // LINK FUNZIONI +  CLASSI 
   include '../config/link.php';
   linkClass();
 
@@ -109,12 +109,12 @@
         <div class="row g8 mt-5">
 
           <!-- img  -->
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8" data-aos="fade-up" data-aos-duration="3000">
             <?php  echo $articolo->imgItem; ?>
           </div>
 
           <!-- intestazione -->
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 gal">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 gal" data-aos="fade-up" data-aos-duration="3000">
 
             <h1><?php echo $articolo->nome; ?></h1>
             <span><?php echo $articolo->descrizione; ?></span>
@@ -124,7 +124,7 @@
           </div>
 
           <!-- scheda tecnica -->
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gal mt-5">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gal mt-5" data-aos="fade-up" data-aos-duration="3000">
 
             <h1 class="mb-5 ms-4">SCHEDA TECNICA</h1>
 
@@ -147,7 +147,7 @@
           </div>
 
           <!-- Galleria -->
-          <div class="col-12 mt-5 gal text-end">
+          <div class="col-12 mt-5 gal text-end" data-aos="fade-up" data-aos-duration="3000">
 
             <h1 class="mb-5 me-4">GALLERIA</h1>
 
@@ -155,7 +155,7 @@
 
                 <div class="row">
 
-                  <div class="col-12 gal1 mb-5">
+                  <div class="col-12 gal1 text-center mb-5">
 
                     <?php 
 

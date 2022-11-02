@@ -20,8 +20,8 @@
 
                       
                       [
-                        'link' => 'lavoro?nome=che-banca-modena',
-                        'nome' => 'CHE BANCA<br/>MODENA'
+                        'link' => 'lavoro?nome=uffici-via-depretis-napoli',
+                        'nome' => 'MSC UFFICI<br/>NAPOLI'
                       ],
 
                       
@@ -50,8 +50,8 @@
 
                       
                       [
-                        'link' => 'lavoro?nome=villa-nazareno',
-                        'nome' => 'VILLA<br/>NAZARENO'
+                        'link' => 'lavoro?nome=villa',
+                        'nome' => 'VILLA IN EMILIA<br/>PRESSO CIVILE'
                       ]
 
                     );

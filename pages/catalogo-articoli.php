@@ -30,32 +30,27 @@
 
       <div class="container">
 
-        <div class="row g8">
+        <div class="row g8 mt-5 mb-5">
 
-          <h1 class="mt-5">Caldaie</h1>
+            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
 
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+                <H1>CALDAIA</H1>
+                <div class="articolo shadow"  onclick="konm()">
+                  <p>KONm</p>
+                </div>  
 
-                  <div class="articolo shadow"  onclick="konm()">
-                    <p>KONm</p>
-                  </div>      
+            </div>
+
+            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+
+                <h1>CLIMATIZZATORE</h1>
+                <div class="articolo shadow" onclick="flowy()">
+                  <p>FLOWY</p>
+                </div>      
+
             </div>
 
         </div>
-
-
-        <div class="row g8">
-
-          <h1 class="mt-5">Climatizzatori</h1>
-
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
-
-                  <div class="articolo shadow" onclick="flowy()">
-                    <p>FLOWY</p>
-                  </div>      
-            </div>
-
-        </div>        
 
       </div>
 
