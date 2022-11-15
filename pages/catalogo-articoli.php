@@ -1,3 +1,19 @@
+<?php
+
+  $listaArticoli = array(
+
+                      [
+                        'link' => 'articolo?nome=flowy',
+                        'nome' => 'FLOWY<br/>CLIMATIZZATORE'
+                      ],
+                      [
+                        'link' => 'articolo?nome=konm',
+                        'nome' => 'KONM<br/>CALDAIA'
+                      ]
+                    );
+
+?>
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -30,28 +46,34 @@
 
       <div class="container">
 
-        <div class="row g8 mt-5 mb-5">
+        <div class="row g6">
 
-            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g3 mt-5">
 
-                <H1>CALDAIA</H1>
-                <div class="articolo shadow"  onclick="konm()">
-                  <p>KONm</p>
-                </div>  
+            <div class="row lavori" data-aos="fade-up" data-aos-duration="3000">
 
-            </div>
+            <?php
+            
+              foreach($listaArticoli as $i){
+                
+                    echo '
+                        <div class="col d-flex justify-content-center">
+                          <a href="'.$i['link'].'">
+                            <div class="item">
+                              <p>'.$i['nome'].'</p>
+                            </div>
+                          </a>
+                        </div>
+                    ';
 
-            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+              }
+            
+            ?>
 
-                <h1>CLIMATIZZATORE</h1>
-                <div class="articolo shadow" onclick="flowy()">
-                  <p>FLOWY</p>
-                </div>      
-
-            </div>
+          </div>
 
         </div>
-
+      
       </div>
 
     </section>
@@ -63,18 +85,5 @@
     <!-- JS LINK-->
     <?php linkJs($page);?>
 
-    <script>
-
-      function konm() {
-        location.href='articolo?nome=konm';
-      }
-
-      function flowy() {
-        location.href='articolo?nome=flowy';
-      }
-
-    </script>
-
-    
   </body>
 </html>

@@ -75,17 +75,20 @@
   }elseif($_GET['nome'] == 'uffici-via-depretis-napoli'){
 
       $lavoro = new lavoro(
-                          'IMPIANTO IDRAULICO',
+                          'centrale Climatizzazione',
                           'via depretis - napoli',
-                          'Ristrutturazione impianto idraulico.',
+                          'Realizzazione centrale Climatizzazione e vari ripristini',
                           2021,
                           null,
                           '<img src="../assets/_images/lavori/via-depretis-napoli/10.jpg" class="img-fluid">',
       /* lavori svolti1 */'<ul>
-                          <li>tubisteria</li>
-                          <li>impianto idraulico</li>
+                            <li>tubazioni in PPr Aquatherm</li>
+                            <li>climatizzazione</li>
+                            <li>tubisteria varia</li>
                           </ul>',
       /* lavori svolti2 */'<ul>
+                              <li>ripristino gruppi frigo esistenti</li>
+                              <li>ripristiono pompe</li>
                           </ul>',
   /* numero immagini  */ 10,
   /* cartella img */    'via-depretis-napoli'

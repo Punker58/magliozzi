@@ -1,3 +1,19 @@
+<?php
+
+  // array img galleria
+  $galleria = array(
+                  ['farmacia-morra/10.jpg'],
+                  ['farmacia-stilo-igea/7.jpg'],
+                  ['farmacia-stilo-igea/8.jpg'],
+                  ['aero-linate/6.jpg'],
+                  ['aero-capodichino/10.jpg'],
+                  ['via-depretis-napoli/10.jpg'],
+                  ['ceramiche-ferrara/6.jpg'],
+                  ['sessa-aurunca/7.jpg'],
+                  ['villa/4.jpg']
+                );
+?>
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -49,20 +65,21 @@
       <h2 data-aos="fade-up" data-aos-duration="3000">I NOSTRI LAVORI</h2>
       <div class="container">
 
-        <!-- Slider main container -->
         <div class="swiper mySwiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="assets/_images/lavori/aero_linate/1.jpg" alt="..."></div>
-            <div class="swiper-slide"><img src="assets/_images/lavori/farmacia-morra/6.jpg"  alt="..."></div>
-            <div class="swiper-slide"><img src="assets/_images/lavori/capannone-volla/6.jpg"  alt="..."></div>
-            ...
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+ 
+          <div class="swiper-wrapper text-center">
 
-        </div>    
+            <?php
+            
+              foreach($galleria as $g){
+                echo '<div class="swiper-slide">
+                          <img src="assets/_images/lavori/'.$g[0].'"  alt="...">
+                      </div>';
+              }
+            
+            ?>
+
+          </div>  
 
       </div>
    
@@ -250,11 +267,11 @@
 
           <div class="row align-items-start" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
             
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center pe-5-xxl float-start">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center pe-5-xxl">
               <h2>SEDE</h2>
               <p class="mb-5">Via Arturo Toscanini, 3</br>(angolo Via Fraustino)<br/>80040 Volla (NA)</p>
 
-              <div class="map-responsive rounded mb-5">
+              <div class="map-responsive rounded mb-5 me-md-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1508.4993438761485!2d14.344734000000003!3d40.871903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b4947dc04a34f8a!2sVia%20Arturo%20toscanini!5e0!3m2!1sit!2sit!4v1634808889939!5m2!1sit!2sit" width="150" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
 
@@ -324,10 +341,10 @@
                 effect: "creative",
                 creativeEffect: {
                   prev: {
-                    translate: ["-120%", 0, -500],
+                    translate: ["-130%", 0, -500],
                   },
                   next: {
-                    translate: ["120%", 0, -500],
+                    translate: ["130%", 0, -500],
                   },
                 },
                 autoplay: {

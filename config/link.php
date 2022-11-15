@@ -21,7 +21,6 @@
             <!-- Main CSS -->
             <link rel="stylesheet" href="assets/css/main.css">
             <link rel="stylesheet" href="assets/css/card.css">
-            <link rel="stylesheet" href="assets/css/animate.css">
         
             <!-- Line Awesome --->
             <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -51,7 +50,6 @@
             <!-- Main CSS -->
             <link rel="stylesheet" href="../assets/css/main.css">
             <link rel="stylesheet" href="../assets/css/card.css">
-            <link rel="stylesheet" href="../assets/css/animate.css">
         
             <!-- Line Awesome --->
             <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -81,7 +79,6 @@
             <!-- Main CSS -->
             <link rel="stylesheet" href="../../assets/css/main.css">
             <link rel="stylesheet" href="../../assets/css/card.css">
-            <link rel="stylesheet" href="../../assets/css/animate.css">
         
             <!-- Line Awesome --->
             <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -111,7 +108,6 @@
             <!-- Main CSS -->
             <link rel="stylesheet" href="../../../assets/css/main.css">
             <link rel="stylesheet" href="../../../assets/css/card.css">
-            <link rel="stylesheet" href="../../../assets/css/animate.css">
         
             <!-- Line Awesome --->
             <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -186,14 +182,14 @@
                 <section id="fast-contacts-s">
                     <div class="container">
                         <div class="row">
-                        '.$f.'
-                        <div class="col-5 fast-social"> 
-                            <a href="https://www.linkedin.com/in/magliozzi-group-srl-1b223a87/"><i class="lab la-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/magliozzigroupsrl/"><i class="lab la-instagram"></i></a>
-                            <a href="https://www.facebook.com/MagliozziGroupClimatizzazione"><i class="lab la-facebook"></i></a>
-                            <a href="https://wa.me/+393290452179?text=Salve%20sono%20interessato%20a%20un%20prenventivo..." ><i class="lab la-whatsapp"></i></a>
-                        </div>     
-                    </div>
+                            '.$f.'
+                            <div class="col-5 fast-social"> 
+                                <a href="https://www.linkedin.com/in/magliozzi-group-srl-1b223a87/"><i class="lab la-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/magliozzigroupsrl/"><i class="lab la-instagram"></i></a>
+                                <a href="https://www.facebook.com/MagliozziGroupClimatizzazione"><i class="lab la-facebook"></i></a>
+                                <a href="https://wa.me/+393290452179?text=Salve%20sono%20interessato%20a%20un%20prenventivo..." ><i class="lab la-whatsapp"></i></a>
+                            </div>  
+                        </div>
                     </div>
                 </section>  
             ';

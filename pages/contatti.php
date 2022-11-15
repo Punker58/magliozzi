@@ -1,4 +1,28 @@
-<!doctype html>
+<?php
+    
+  if(isset($_POST['submit'])) {
+    
+    $from = ltrim(rtrim(strip_tags(stripslashes($_POST['email']))));
+    $to = "info@magliozzi-group.com";
+
+    $note = htmlspecialchars($_POST['note']);
+    $nome = ltrim(rtrim(strip_tags(stripslashes($_POST['nome']))));
+    $numero = ltrim(rtrim(strip_tags(stripslashes($_POST['numero']))));
+
+    if(strlen($numero) == 10 && !empty($email) && !empty($nome) && !empty($note)){
+
+      $subject = "Richiesta info da" . ltrim(rtrim(strip_tags(stripslashes($from))));
+      $message = $note;
+      $headers = "Da " . $nome . "</br>" . $numero . "</br>" . $from;
+
+      mail($to, $subject, $message, $headers);
+
+    }
+
+  }
+?>
+
+<doctype html>
 <html lang="it">
   <head>
 
@@ -92,26 +116,6 @@
         </div>
         
     </section>
-
-    <?php
-    
-      if(isset($_POST['submit'])) {
-        
-        $from = ltrim(rtrim(strip_tags(stripslashes($_POST['email']))));
-        $to = "info@magliozzi-group.com";
-
-        $nome = ltrim(rtrim(strip_tags(stripslashes($_POST['nome']))));
-        $numero = ltrim(rtrim(strip_tags(stripslashes($_POST['numero']))));
-
-        $subject = "Richiesta info da" . ltrim(rtrim(strip_tags(stripslashes($from))));
-        $message = $_POST['note'];
-        $headers = "Da " . $nome . "</br>" . $numero . "</br>" . $from;
-
-        mail($to, $subject, $message, $headers);
-
-      }
-    ?>
-
 
     <!-- Footer -->
     <?php $footer= 'doppio'; include '../config/footer.php';?>

@@ -97,18 +97,17 @@
 
             <div class="row lavori" data-aos="fade-up" data-aos-duration="3000">
 
-
             <?php
             
               foreach($listaLavoro as $i){
                 
                     echo '
                         <div class="col d-flex justify-content-center">
-                        <a href="'.$i['link'].'">
-                          <div class="item">
-                            <p>'.$i['nome'].'</p>
-                          </div>
-                        </a>
+                          <a href="'.$i['link'].'">
+                            <div class="item">
+                              <p>'.$i['nome'].'</p>
+                            </div>
+                          </a>
                         </div>
                     ';
 
