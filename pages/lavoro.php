@@ -244,7 +244,7 @@
 
     <section id="main" class="main-s">
 
-        <div class="container">
+        <div class="container" id="font2">
 
           <div class="row mt-5">
 
@@ -317,7 +317,7 @@
 
                     <?php 
 
-                        addNumeroimg($lavoro->nImg(), $path, $lavoro->cartellaImg());
+                      addNumeroimg($lavoro->nImg(), $path, $lavoro->cartellaImg());
                     
                     ?>
 

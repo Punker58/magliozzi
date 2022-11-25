@@ -2,7 +2,7 @@
   if ($page == null) :?>
 
     <!-- NAVBAR DESKTOP -->
-    <section id="header"> 
+    <section id="header" class="font2"> 
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -37,7 +37,7 @@
     </section>
 
     <!-- NAVBAR MOBILE -->
-    <section id="fast-contacts-s2">
+    <section id="fast-contacts-s2" class="font2">
       <nav id="nav-mobile" class="navbar navbar-dark fixed-top">
         <div id="nav-toggle" class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -101,7 +101,7 @@
 <?php  elseif ($page == 'doppio') :?>
 
     <!-- NAVBAR DESKTOP -->
-    <section id="header"> 
+    <section id="header" class="font2"> 
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg navbar-dark">
             
@@ -136,7 +136,7 @@
     </section>
 
     <!-- NAVBAR MOBILE -->
-    <section id="fast-contacts-s2">
+    <section id="fast-contacts-s2" class="font2">
       <nav id="nav-mobile" class="navbar navbar-dark bg-#FBBD04 fixed-top">
         <div id="nav-toggle" class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -196,8 +196,8 @@
 <?php  elseif ($page == 'triplo') :?>
 
     <!-- NAVBAR DESKTOP -->
-    <section id="header"> 
-        <div class="container-fluid">
+    <section id="header" class="font2"> 
+        <div class="container-fluid" >
           <nav class="navbar navbar-expand-lg navbar-dark">
             
             <div class="container">
@@ -231,7 +231,7 @@
     </section>
 
     <!-- NAVBAR MOBILE -->
-    <section id="fast-contacts-s2">
+    <section id="fast-contacts-s2" class="font2">
       <nav id="nav-mobile" class="navbar navbar-dark bg-#FBBD04 fixed-top">
         <div id="nav-toggle" class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
